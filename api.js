@@ -1,5 +1,9 @@
 // recuperare i dati dal json
 
-fetch('./products.json')
-.then(response => response.json())
-.then(data => console.log(data));
+const get_products = async () => {
+    const promise = await fetch('./products.json');
+    const json = await promise.json();
+    console.log(json);
+}
+
+export default get_products;
