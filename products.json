@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Cuffie Bluetooth",
+    "category": "Elettronica",
+    "price": 39.99
+  },
+  {
+    "name": "Lampada da scrivania LED",
+    "category": "Casa",
+    "price": 24.50
+  },
+  {
+    "name": "Tastiera meccanica RGB",
+    "category": "Informatica",
+    "price": 79.90
+  },
+  {
+    "name": "Tazza in ceramica",
+    "category": "Cucina",
+    "price": 12.00
+  },
+  {
+    "name": "Zaino in tela",
+    "category": "Accessori",
+    "price": 45.00
+  },
+  {
+    "name": "Cuscino decorativo",
+    "category": "Casa",
+    "price": 18.99
+  },
+  {
+    "name": "Mouse wireless",
+    "category": "Informatica",
+    "price": 29.99
+  },
+  {
+    "name": "Borraccia termica",
+    "category": "Sport",
+    "price": 22.50
+  }
+]
