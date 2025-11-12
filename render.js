@@ -3,12 +3,14 @@ import get_products from "./api.js";
 const create_card = async () =>{
     const products = await get_products();
     products.forEach((el) => {
-        const div = document.querySelector('.container_products');
+        const div = document.querySelector('.products-box');
         div.innerHTML += `
-            <div class="card-body">
-                <h5 class="card-title">${el.name}</h5>
-                <p class="card-text m-0 p-0">Categoria: ${el.category}</p>
-                <p class="card-text pb-3">Prezzo: ${el.price} €</p>
+            <div class="card m-1" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-name">${el.name}</h5>
+                    <h6 class="card-category mb-2 text-body-secondary">Categoria: ${el.category}</h6>
+                    <p class="card-price">Prezzo: ${el.price.toFixed(2)} €</p>
+                </div>
             </div>
         `;      
 
@@ -16,3 +18,4 @@ const create_card = async () =>{
 }
 
 create_card();
+

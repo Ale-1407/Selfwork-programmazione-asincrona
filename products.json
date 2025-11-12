@@ -38,5 +38,10 @@
     "name": "Borraccia termica",
     "category": "Sport",
     "price": 22.50
+  },
+  {
+    "name": "Tappetino",
+    "category": "Casa",
+    "price": 14.99
   }
 ]
