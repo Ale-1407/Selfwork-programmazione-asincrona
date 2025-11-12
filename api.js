@@ -3,7 +3,7 @@
 const get_products = async () => {
     const promise = await fetch('./products.json');
     const json = await promise.json();
-    console.log(json);
+    return json;
 }
 
 export default get_products;
