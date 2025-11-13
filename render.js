@@ -2,12 +2,12 @@ import get_products from "./api.js";
 
 
 const showLoader = () => {
-    const loader = document.querySelector('.loader');
+    const loader = document.querySelector('.loader-background');
     loader.classList.remove('d-none');
 };
 
 const hideLoader = () => {
-    const loader = document.querySelector('.loader');
+    const loader = document.querySelector('.loader-background');
     loader.classList.add('d-none');
 };
 
