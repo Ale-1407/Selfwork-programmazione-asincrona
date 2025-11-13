@@ -22,12 +22,15 @@ const wait = (ms = 0) => {
 
 const create_card = async () =>{
     showLoader();
+
+    const div = document.querySelector('.products-box');
+    div.innerHTML = "";
+
     const products = await get_products();
-    
+
     await wait(1000);
 
     products.forEach((el) => {
-        const div = document.querySelector('.products-box');
         div.innerHTML += `
             <div class="card m-2" style="width: 18rem;">
                 <div class="card-body">
@@ -42,7 +45,7 @@ const create_card = async () =>{
     hideLoader();
 }
 
-create_card();
 
-
+const show_card_btn = document.querySelector('.show_card_btn');
+show_card_btn.addEventListener('click', create_card);
 
